@@ -10,6 +10,9 @@ TCPShield is compatible with Spigot / CraftBukkit, BungeeCord and Velocity.
 
 When using Spigot / CraftBukkit, [ProtocolLib](https://github.com/aadnk/ProtocolLib) needs to be installed.
 
+### Fork Changes
+This fork will allow for an exception in preventing the proxy connections by allowing an additional connection intended for GeyserMC Seperate Proxy.
+
 ### Setup
 Setting up the plugin is easy as cake. Please follow [these](https://docs.tcpshield.com/onboarding/tcpshield-plugin) guidelines. 
 
