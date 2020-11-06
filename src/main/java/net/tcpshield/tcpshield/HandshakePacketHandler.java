@@ -104,7 +104,9 @@ public class HandshakePacketHandler {
         if (config.isDebug()) {
             this.logger.warning(String.format("%s[%s/%s] provided valid handshake information, but signing check failed. Raw payload = \"%s\"", player.getName(), player.getUUID(), player.getIP(), rawPayload));
         }
-
+        
+        if (!config.geyser()) return;
+        
         if (config.isOnlyProxy()) {
             player.disconnect();
         }
