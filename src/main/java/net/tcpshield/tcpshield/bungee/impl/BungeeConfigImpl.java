@@ -22,6 +22,7 @@ public class BungeeConfigImpl extends TCPShieldConfig {
 
         Configuration config = loadConfig();
         this.onlyProxy = config.getBoolean("only-allow-proxy-connections");
+        this.geyser = config.getBoolean("allow-for-geyser-support");
         this.timestampValidationMode = config.getString("timestamp-validation");
         this.debug = config.getBoolean("debug-mode");
     }
